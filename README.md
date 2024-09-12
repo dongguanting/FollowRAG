@@ -12,7 +12,7 @@
 
 
 
-We propose a instruction-following alignement pipline named **VIF-RAG framework** and instruction-following auto-evaluation Benchmark named **FollowRAG**:
+We propose a instruction-following alignement pipline named **VIF-RAG framework** and auto-evaluation Benchmark named **FollowRAG**:
 
 - IF-RAG: It is the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. VIF-RAG integrates a verification process at each step of data augmentation and combination. We begin by manually creating a minimal set of atomic instructions (<100) and then apply steps including instruction composition, quality verification, instruction-query combination, and dual-stage verification to generate a large-scale, high-quality VIF-RAG-QA dataset (>100K). 
 
