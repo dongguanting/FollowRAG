@@ -68,10 +68,48 @@ pip install -r requirements.txt
 
 Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our experiment on WebQSP.
 
-The script will first convert the KB relations into text sentences.
-DPR is then run to select the most relevant relations for each question.
-Next, the input to the FiD reader is created for each question using the most relevant relations retrieved by DPR.
-Finally, a FiD model can be trained using the UniK-QA input. Our trained FiD checkpoint can be downloaded here. (Our model was trained in late 2020, so you may need to check out an older version of FiD.)
+---
+
+## 🎯 Training
+
+We use the version of [LlaMA-Factory v0.6.3](https://github.com/hiyouga/LLaMA-Factory/releases/tag/v0.6.3). Thanks for their excellent work.
+
+we also release our SFT version dataset as strong baseline in Table1:
+- **SFT Version:** To make a fair comparison with VIF-RAG, we use the same amount of [ShareGPT](https://huggingface.co/datasets/dongguanting/ShareGPT-12K) and [🤗RAG-QA-40K](https://huggingface.co/datasets/dongguanting/RAG-QA-40K) as in VIF-RAG’s data synthesis process, mixing them together to fine-tune (SFT) different baseline models.
+
+- **VIF-RAG-QA:** We release our SFT datasets, including [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K).
+
+```bash
+deepspeed --num_gpus=8 train_bash.py \
+        --deepspeed $deepspeed_zero3_config_path \
+        --stage sft \
+        --do_train \
+        --use_fast_tokenizer \
+        --flash_attn \
+        --adam_beta1 0.9 \
+        --adam_beta2 0.95 \
+        --model_name_or_path $MODEL_PATH \
+        --dataset $dataset \
+        --template $Template \
+        --finetuning_type full \
+        --output_dir $OUTPUT_PATH \
+        --overwrite_cache \
+        --overwrite_output_dir \
+        --warmup_steps 20 \
+        --weight_decay 0.1 \
+        --per_device_train_batch_size 4 \
+        --gradient_accumulation_steps 4 \
+        --ddp_timeout 9000 \
+        --learning_rate 7e-6 \
+        --lr_scheduler_type "linear" \
+        --logging_steps 1 \
+        --cutoff_len 8192 \
+        --save_steps 200 \
+        --num_train_epochs 3.0 \
+        --plot_loss \
+        --bf16 
+```
+
 
 
 # FollowRAG
