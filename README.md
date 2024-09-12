@@ -44,12 +44,12 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 # VIF-RAG
 
-**What is *InsTag*?**
 
 We broke down the VIF-RAG data synthesis process into steps and provided 10-20 samples for each step to assist with your reproduction. Be sure to replace these with your own input.
 
 <img width="1243" alt="image" src="https://github.com/user-attachments/assets/d38871d3-d29d-425b-a7d5-d8a7081a110d">
 
+---
 
 ### :wrench: Dependencies
 General Setup Environment:
@@ -63,9 +63,15 @@ pip install -r requirements.txt
 ```
 ---
 
+### :rocket: **How to Perform *VIF-RAG*? Data Synthesis**
 
 
+Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our experiment on WebQSP.
 
+The script will first convert the KB relations into text sentences.
+DPR is then run to select the most relevant relations for each question.
+Next, the input to the FiD reader is created for each question using the most relevant relations retrieved by DPR.
+Finally, a FiD model can be trained using the UniK-QA input. Our trained FiD checkpoint can be downloaded here. (Our model was trained in late 2020, so you may need to check out an older version of FiD.)
 
 
 # FollowRAG
