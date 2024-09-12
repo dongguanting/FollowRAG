@@ -25,7 +25,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-# News
+## News
 
 - [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K). 
 
@@ -35,7 +35,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-# Contents
+## Contents
 
 - [VIF-RAG](#VIF-RAG)
 - [FollowRAG](#FollowRAG)
@@ -43,7 +43,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-# VIF-RAG
+## VIF-RAG
 
 
 We broke down the VIF-RAG data synthesis process into steps and provided 10-20 samples for each step to assist with your reproduction. Be sure to replace these with your own input.
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our synthesize dataset.
 
 
-## 🎯 Training
+### 🎯 Training
 
 We use the version of [LlaMA-Factory v0.6.3](https://github.com/hiyouga/LLaMA-Factory/releases/tag/v0.6.3). Thanks for their excellent work.
 
@@ -114,14 +114,14 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ---
 
-# FollowRAG
+## FollowRAG
 
 
 
 
 
 
-# Citation 
+## Citation 
 
 Please cite our work if you find the repository helpful.
 
@@ -130,5 +130,3 @@ Please cite our work if you find the repository helpful.
 ```
 
 
-
-https://drive.google.com/drive/folders/1dCCpAVPiwPgjOhuKGcyonwgfr2kntJHZ?usp=sharing
