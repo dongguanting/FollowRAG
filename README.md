@@ -23,9 +23,9 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 🤖️ <a href="https://followrag.github.io/" target="_blank">Website</a> • 🤗 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank">VIF-RAG-QA-110K</a> • 👉 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K" target="_blank">VIF-RAG-QA-20K</a> • 📖 <a href="https://arxiv.org/pdf/2308.07074.pdf" target="_blank">Paper</a>  <br>
 </p>
 
+---
 
-
-## News
+# News
 
 - [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K). 
 
@@ -33,14 +33,15 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 - [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](). 
 
+---
 
-## Contents
+# Contents
 
 - [VIF-RAG](#VIF-RAG)
 - [FollowRAG](#FollowRAG)
 - [Citation](#citation)
 
-
+---
 
 # VIF-RAG
 
@@ -49,7 +50,7 @@ We broke down the VIF-RAG data synthesis process into steps and provided 10-20 s
 
 <img width="1243" alt="image" src="https://github.com/user-attachments/assets/d38871d3-d29d-425b-a7d5-d8a7081a110d">
 
----
+
 
 ### :wrench: Dependencies
 General Setup Environment:
@@ -61,14 +62,12 @@ General Setup Environment:
 cd ./VIF-RAG/
 pip install -r requirements.txt
 ```
----
 
 ### :rocket: How to Perform *VIF-RAG* Data Synthesis?
 
 
 Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our synthesize dataset.
 
----
 
 ## 🎯 Training
 
@@ -113,7 +112,7 @@ deepspeed --num_gpus=8 train_bash.py \
         --bf16 
 ```
 
-
+---
 
 # FollowRAG
 
@@ -122,7 +121,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 
 
-## Citation 
+# Citation 
 
 Please cite our work if you find the repository helpful.
 
