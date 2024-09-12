@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ### :rocket: How to Perform *VIF-RAG* Data Synthesis?
 
 
-Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our experiment on WebQSP.
+Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce our synthesize dataset.
 
 ---
 
