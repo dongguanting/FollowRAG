@@ -10,8 +10,14 @@
 
 
 
-We introduce a tool named **InsTag** for analyzing supervised fine-tuning (SFT) data in LLM aligning with human preference. For local tagging deployment, we release **InsTagger**, fine-tuned on **InsTag** results, to tag the queries in SFT data.
-Through the scope of tags, we sample a 6K subset of open-resourced SFT data to fine-tune LLaMA and LLaMA-2 and the fine-tuned models **TagLM-13B-v1.0** and **TagLM-13B-v2.0** outperform many open-resourced LLMs on MT-Bench. 
+
+
+We propose a instruction-following alignement pipline named **VIF-RAG framework** and instruction-following auto-evaluation Benchmark named **FollowRAG**:
+
+- IF-RAG: It is the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. VIF-RAG integrates a verification process at each step of data augmentation and combination. We begin by manually creating a minimal set of atomic instructions (<100) and then apply steps including instruction composition, quality verification, instruction-query combination, and dual-stage verification to generate a large-scale, high-quality VIF-RAG-QA dataset (>100K). 
+
+- FollowRAG: To address the gap in instruction-following auto-evaluation for RAG systems, we introduce FollowRAG Benchmark, which includes approximately 3K test samples, covering 22 categories of general instruction constraints and 4 knowledge-intensive QA datasets. Due to its robust pipeline design, FollowRAG can seamlessly integrate with different RAG benchmarks
+
 
 <p align="center">
 🤗 <a href="https://huggingface.co/OFA-Sys/InsTagger" target="_blank">InsTagger Checkpoint</a> • 👉 <a href="https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary" target="_blank">Online LocalTagger Demo</a> • 📖 <a href="https://arxiv.org/pdf/2308.07074.pdf" target="_blank">Paper</a>  <br>
@@ -35,6 +41,15 @@ These models outperform open-source models based on considerably larger SFT data
 <p align="center" width="100%">
 <a ><img src="assets/main_figure.png" alt="InsTag" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
+
+
+
+
+**What is *VIF-RAG*?**
+
+we propose VIF-RAG, the first automated, scalable, and verifiable data synthesis pipeline for achieving complex instruction-following alignment in RAG scenarios. The core insight of VIF-RAG is to ensure every step of data augmentation and combination includes a proper verification process. Specifically, we start by manually crafting a minimal set of atomic instructions ($<$100) and developing combination rules to synthesize and verify complex instructions for a seed set. We then use supervised models for instruction rewriting. Motivated by tool execution studies~\citep{le2022coderl,qiao2024making}, we employ the same supervised model to generate verification code and automatically verify the quality of augmented instructions through the Python compiler's outputs. Finally, we combine these high-quality instructions with RAG datasets from various domains (each containing retrieved documents per query), performing the augmentation and dual validation process to synthesize a high-quality instruction-based RAG dataset, named VIF-RAG-QA ($>$100K samples).
+
+
 
 
 ## News
