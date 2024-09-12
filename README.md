@@ -1,4 +1,4 @@
-# <div align="center">⚡Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
+# <div align="center">🔥Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
 
 
 <div align="center">
