@@ -75,10 +75,13 @@ Follow the interactive Jupyter notebook VIF-RAG on ``vifrag.ipynb`` to reproduce
 We use the version of [LlaMA-Factory v0.6.3](https://github.com/hiyouga/LLaMA-Factory/releases/tag/v0.6.3). Thanks for their excellent work.
 
 we also release our SFT version dataset as strong baseline in Table1:
-- **SFT Version:** To make a fair comparison with VIF-RAG, we use the same amount of [ShareGPT](https://huggingface.co/datasets/dongguanting/ShareGPT-12K) and [🤗RAG-QA-40K](https://huggingface.co/datasets/dongguanting/RAG-QA-40K) as in VIF-RAG’s data synthesis process, mixing them together to fine-tune (SFT) different baseline models.
+- **SFT Version:** To make a fair comparison with VIF-RAG, we use the same amount of [🤗ShareGPT](https://huggingface.co/datasets/dongguanting/ShareGPT-12K) and [🤗RAG-QA-40K](https://huggingface.co/datasets/dongguanting/RAG-QA-40K) as in VIF-RAG’s data synthesis process, mixing them together to fine-tune (SFT) different baseline models.
 
-- **VIF-RAG-QA:** We release our SFT datasets, including [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K).
+- **VIF-RAG-QA:** We release our SFT datasets, including [🤗VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [🤗VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K).
 
+
+- **SFT bash:**
+  
 ```bash
 deepspeed --num_gpus=8 train_bash.py \
         --deepspeed $deepspeed_zero3_config_path \
@@ -124,14 +127,7 @@ deepspeed --num_gpus=8 train_bash.py \
 Please cite our work if you find the repository helpful.
 
 ```
-@misc{lu2023instag,
-      title={#InsTag: Instruction Tagging for Analyzing Supervised Fine-tuning of Large Language Models}, 
-      author={Keming Lu and Hongyi Yuan and Zheng Yuan and Runji Lin and Junyang Lin and Chuanqi Tan and Chang Zhou and Jingren Zhou},
-      year={2023},
-      eprint={2308.07074},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+
 ```
 
 
