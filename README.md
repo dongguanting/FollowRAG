@@ -10,8 +10,6 @@
 
 
 
-
-
 We propose a instruction-following alignement pipline named **VIF-RAG framework** and auto-evaluation Benchmark named **FollowRAG**:
 
 - IF-RAG: It is the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. VIF-RAG integrates a verification process at each step of data augmentation and combination. We begin by manually creating a minimal set of atomic instructions (<100) and then apply steps including instruction composition, quality verification, instruction-query combination, and dual-stage verification to generate a large-scale, high-quality VIF-RAG-QA dataset (>100K). 
@@ -19,14 +17,29 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 - FollowRAG: To address the gap in instruction-following auto-evaluation for RAG systems, we introduce FollowRAG Benchmark, which includes approximately 3K test samples, covering 22 categories of general instruction constraints and 4 knowledge-intensive QA datasets. Due to its robust pipeline design, FollowRAG can seamlessly integrate with different RAG benchmarks
 
 
+
+
 <p align="center">
-🤗 <a href="https://huggingface.co/OFA-Sys/InsTagger" target="_blank">InsTagger Checkpoint</a> • 👉 <a href="https://www.modelscope.cn/studios/lukeminglkm/instagger_demo/summary" target="_blank">Online LocalTagger Demo</a> • 📖 <a href="https://arxiv.org/pdf/2308.07074.pdf" target="_blank">Paper</a>  <br>
+🤗 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank">VIF-RAG-QA-110K</a> • 👉 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K" target="_blank">VIF-RAG-QA-20K</a> • 📖 <a href="https://arxiv.org/pdf/2308.07074.pdf" target="_blank">Paper</a>  <br>
 </p>
 
 <p align="center">
 🤖️ <a href="https://huggingface.co/OFA-Sys/TagLM-13b-v1.0" target="_blank">TagLM-13B-v1.0 Checkpoint</a> 🤖️ <a href="https://huggingface.co/OFA-Sys/TagLM-13b-v2.0" target="_blank">TagLM-13B-v2.0 Checkpoint</a><br>
 </p>
 
+
+
+## News
+
+- [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K). 
+
+- [10/2024] 🔥 We released our instruction-following auto-evaluation benchmark named ***FollowRAG***. Download [xxx]() and [xx]().
+- 
+- [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](). 
+
+
+
+## VIF-RAG Framework
 
 **What is *InsTag*?**
 
@@ -52,15 +65,6 @@ we propose VIF-RAG, the first automated, scalable, and verifiable data synthesis
 
 
 
-## News
-
-- [08/2023] 🔥 We have an online demo of InsTagger hosted by ModelScope. Please refer to the link on the top. Thanks ModelScope!
-
-- [08/2023] 🔥 We released aligned LLMs **TagLM-13B-v1.0** and **TagLM-13B-v2.0** based on LLaMA and LLaMA-2 respectively. Both are fine-tuned on sub-sampled SFT data according to ***InsTag***. Download [v1.0]() and [v2.0](). 
-
-- [08/2023] 🔥 We released an LLM **InsTagger** fine-tuned on our tagging results for local tagging deployments. Download [weight](https://huggingface.co/OFA-Sys/InsTagger). 
-
-- [08/2023] 🔥 We introduced ***InsTag***, our SFT data analysis tool. Check out the [paper](). 
 
 ## Contents
 
