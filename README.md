@@ -34,6 +34,12 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 - [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](). 
 
 
+## Contents
+
+- [VIF-RAG](## VIF-RAG Framework)
+- [Citation](#citation)
+
+
 
 ## VIF-RAG Framework
 
@@ -62,10 +68,6 @@ we propose VIF-RAG, the first automated, scalable, and verifiable data synthesis
 
 
 
-## Contents
-
-- [Model Checkpoints](#model-checkpoints)
-- [Citation](#citation)
 
 ## InsTagger
 
