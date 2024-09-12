@@ -29,8 +29,8 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 - [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K). 
 
-- [10/2024] 🔥 We released our instruction-following auto-evaluation benchmark named ***FollowRAG***. Download [xxx]() and [xx]().
-- 
+- [10/2024] 🔥 We released our instruction-following auto-evaluation benchmark named ***FollowRAG***. Please follow [guidelines](#FollowRAG) for testing.
+
 - [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](). 
 
 
