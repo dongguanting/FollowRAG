@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 
 
-# VIF-RAG
+# FollowRAG
 
 
 
