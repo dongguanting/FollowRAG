@@ -37,9 +37,9 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ## Contents
 
-- [VIF-RAG](##VIF-RAG)
-- [FollowRAG](##FollowRAG)
-- [Citation](##citation)
+- [VIF-RAG](#vif-rag)
+- [FollowRAG](#followrag)
+- [Citation](#citation)
 
 
 ## Outlines
