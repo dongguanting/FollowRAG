@@ -62,6 +62,8 @@ General Setup Environment:
 ```bash
 cd ./VIF-RAG/
 pip install -r requirements.txt
+cd ./FollowRAG/
+pip install -r requirements.txt
 ```
 
 ### :rocket: How to Perform *VIF-RAG* Data Synthesis?
@@ -120,16 +122,6 @@ deepspeed --num_gpus=8 train_bash.py \
 FollowRAG is the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG. 
 
 <img width="1070" alt="image" src="https://github.com/user-attachments/assets/91a5e7ac-d828-46f2-bcae-96886f7ef295">
-
-
-### :wrench: Dependencies
-General Setup Environment:
-- Python 3.9
-
-```bash
-cd ./FollowRAG/
-pip install -r requirements.txt
-```
 
 
 ### 📊 Test Cases
