@@ -116,7 +116,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ## 🐋 FollowRAG
 
-We introduce FollowRAG, the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG tasks. 
+FollowRAG is the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG. 
 
 
 
