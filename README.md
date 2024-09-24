@@ -41,6 +41,17 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 - [FollowRAG](##FollowRAG)
 - [Citation](##citation)
 
+
+## Outlines
+- [💥 News 💥](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-news-)
+- [👀 About We-Math](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-about-we-math)
+- [🏆 Leaderboard on We-Math 🏆](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-leaderboard-on-we-math-)
+- [📝 Evaluation Piplines on We-Math](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-evaluation-piplines-on-we-math)
+- [📊 We-Math Dataset](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-we-math-dataset)
+- [📜 License](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-license)
+- [🤝 Contributors](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-contributors)
+
+
 ---
 
 ## VIF-RAG 🌠 
@@ -118,7 +129,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 FollowRAG is the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG. 
 
-<img width="1078" alt="截屏2024-09-24 11 16 01" src="https://github.com/user-attachments/assets/5aa22c67-4e7a-459f-ab83-21803969d210">
+<img width="1070" alt="image" src="https://github.com/user-attachments/assets/91a5e7ac-d828-46f2-bcae-96886f7ef295">
 
 
 ### :wrench: Dependencies
