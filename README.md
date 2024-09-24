@@ -116,6 +116,81 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ## FollowRAG
 
+
+### :wrench: Dependencies
+General Setup Environment:
+- Python 3.9
+
+```bash
+cd ./FollowRAG/
+pip install -r requirements.txt
+```
+
+
+### 📊 Test Cases
+
+**Key-Value Introduction:**
+
+**prompt:** The complete question for FollowRAG, including three parts: TopK Document + user query + instruction
+**question:** QA question (sourced from NQ)
+**answer_gold:** Reference answer (note that this is not the golden answer, as the answer needs to follow instruction constraints after adding instructions)
+**question_with_instrs:** QA question + a series of instruction constraints
+**instruction_id_list & kwargs:** Instruction types and parameters needed for evaluation calculation
+**passages:** TopK documents retrieved from Wiki using DPR
+
+
+
+```bash
+
+    {
+        "key": 0,
+        "type": "ifnq",
+        "prompt": "Given the following information: \nPassage-0 Title: Gravity Content: and prevents further acceleration. The force of gravity on Earth is the resultant (vector sum) of two forces: (a) The gravitational attraction in accordance with Newton's universal law of gravitation, and (b) the centrifugal force, which results from the choice of an earthbound, rotating frame of reference. The force of gravity is the weakest at the equator because of the centrifugal force caused by the Earth's rotation and because points on the equator are furthest from the center of the Earth. The force of gravity varies with latitude and increases from about 9.780 m/s at the Equator to about 9.832\nPassage-1 Title: Gravitational acceleration Content: Gravitational acceleration In physics, gravitational acceleration is the acceleration on an object caused by the force of gravitation. Neglecting friction such as air resistance, all small bodies accelerate in a gravitational field at the same rate relative to the center of mass. This equality is true regardless of the masses or compositions of the bodies. At different points on Earth, objects fall with an acceleration between and depending on altitude and latitude, with a conventional standard value of exactly 9.80665 m/s (approximately 32.174 ft/s). This does not take into account other effects, such as buoyancy or drag. Newton's law of\nPassage-2 Title: Gravity Content: Gravity Gravity (), or gravitation, is a natural phenomenon by which all things with mass or energy—including planets, stars, galaxies, and even light—are brought toward (or \"gravitate\" toward) one another. On Earth, gravity gives weight to physical objects, and the Moon's gravity causes the ocean tides. The gravitational attraction of the original gaseous matter present in the Universe caused it to begin coalescing, forming starsand for the stars to group together into galaxiesso gravity is responsible for many of the large-scale structures in the Universe. Gravity has an infinite range, although its effects become increasingly weaker on farther objects. Gravity\n\nAnswer the following question based on the given information or your internal knowledge with one or few words without the source.\nQuestion: What is the common name for gravitational force? In this task, repeat the exact request first, then give your response. Do not say any word before repeating the exact request. Moreover, your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>. Ensure the word disappointed appears at least twice. Finally, provide your answer with less than 200 words.",
+        "question": "what is the common name for gravitational force",
+        "answer_gold": "Gravity/Gravity, or gravitation",
+        "question_with_instrs": "What is the common name for gravitational force? In this task, repeat the exact request first, then give your response. Do not say any word before repeating the exact request. Moreover, your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>. Ensure the word disappointed appears at least twice. Finally, provide your answer with less than 200 words.",
+        "instruction_id_list": [
+            "combination:repeat_prompt",
+            "detectable_format:title",
+            "keywords:frequency",
+            "length_constraints:number_words"
+        ],
+        "kwargs": [
+            {
+                "prompt_to_repeat": "What is the common name for gravitational force?"
+            },
+            {},
+            {
+                "relation": "at least",
+                "keyword": "disappointed",
+                "frequency": 2
+            },
+            {
+                "relation": "less than",
+                "num_words": 200
+            }
+        ],
+        "passages": [
+            {
+                "title": "Gravity",
+                "content": "and prevents further acceleration. The force of gravity on Earth is the resultant (vector sum) of two forces: (a) The gravitational attraction in accordance with Newton's universal law of gravitation, and (b) the centrifugal force, which results from the choice of an earthbound, rotating frame of reference. The force of gravity is the weakest at the equator because of the centrifugal force caused by the Earth's rotation and because points on the equator are furthest from the center of the Earth. The force of gravity varies with latitude and increases from about 9.780 m/s at the Equator to about 9.832"
+            },
+            {
+                "title": "Gravitational acceleration",
+                "content": "Gravitational acceleration In physics, gravitational acceleration is the acceleration on an object caused by the force of gravitation. Neglecting friction such as air resistance, all small bodies accelerate in a gravitational field at the same rate relative to the center of mass. This equality is true regardless of the masses or compositions of the bodies. At different points on Earth, objects fall with an acceleration between and depending on altitude and latitude, with a conventional standard value of exactly 9.80665 m/s (approximately 32.174 ft/s). This does not take into account other effects, such as buoyancy or drag. Newton's law of"
+            },
+            {
+                "title": "Gravity",
+                "content": "Gravity Gravity (), or gravitation, is a natural phenomenon by which all things with mass or energy—including planets, stars, galaxies, and even light—are brought toward (or \"gravitate\" toward) one another. On Earth, gravity gives weight to physical objects, and the Moon's gravity causes the ocean tides. The gravitational attraction of the original gaseous matter present in the Universe caused it to begin coalescing, forming starsand for the stars to group together into galaxiesso gravity is responsible for many of the large-scale structures in the Universe. Gravity has an infinite range, although its effects become increasingly weaker on farther objects. Gravity"
+            }
+        ]
+    }
+```
+
+
+
+
+
 ### inference
 You first need to perform inference on followRAG, and the pseudocode is as follows:
 ```python
