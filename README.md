@@ -35,11 +35,11 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-## Contents
+## Outlines
 
 - [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#vif-rag-)
 - [FollowRAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#followrag-)
-- [Citation](#citation)
+- [Citation](https://github.com/dongguanting/FollowRAG/blob/main/README.md#citation-)
 
 
 ## Outlines
@@ -242,6 +242,9 @@ python eval/main_eval.py \
 Our evaluation of instruction-following part largely draws on the [IFEval code repository](https://github.com/google-research/google-research/tree/master/instruction_following_eval). We appreciate their excellent work!
 
 
+## 📜 License
+
+Our dataset are distributed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
 
 
 
