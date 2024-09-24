@@ -117,6 +117,8 @@ deepspeed --num_gpus=8 train_bash.py \
 ## 🐋 FollowRAG
 
 
+
+
 ### :wrench: Dependencies
 General Setup Environment:
 - Python 3.9
@@ -130,7 +132,7 @@ pip install -r requirements.txt
 ### 📊 Test Cases
 
 <details>
-<summary>Click here, if you are curious about FollowRAG‘s test cases.</summary>
+<summary>Click here! if you are curious about FollowRAG‘s test cases.</summary>
 
 **Key-Value Introduction:**
 
@@ -143,7 +145,7 @@ pip install -r requirements.txt
 
 
 
-```bash
+```json
 
     {
         "key": 0,
@@ -205,6 +207,12 @@ for dp in followRAG_full:
     data_inferenced.append(dp)
 save_jsonl(data_inferenced,'results/finish_inference/data_inferenced.jsonl')
 ```
+Please refer to the following template to prepare your result JSON files for subsequent evaluation. your data_inferenced.jsonl format is as follows:
+
+```bash
+
+```
+
 
 ### eval
 After completing the inference, run the evaluation script:
