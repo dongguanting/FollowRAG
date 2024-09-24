@@ -131,12 +131,12 @@ pip install -r requirements.txt
 
 **Key-Value Introduction:**
 
-**prompt:** The complete question for FollowRAG, including three parts: TopK Document + user query + instruction
-**question:** QA question (sourced from NQ)
-**answer_gold:** Reference answer (note that this is not the golden answer, as the answer needs to follow instruction constraints after adding instructions)
-**question_with_instrs:** QA question + a series of instruction constraints
-**instruction_id_list & kwargs:** Instruction types and parameters needed for evaluation calculation
-**passages:** TopK documents retrieved from Wiki using DPR
+- **prompt:** The complete question for FollowRAG, including three parts: TopK Document + user query + instruction
+- **question:** QA question (sourced from NQ)
+- **answer_gold:** Reference answer (note that this is not the golden answer, as the answer needs to follow instruction constraints after adding instructions)
+- **question_with_instrs:** QA question + a series of instruction constraints
+- **instruction_id_list & kwargs:** Instruction types and parameters needed for evaluation calculation
+- **passages:** TopK documents retrieved from Wiki using DPR
 
 
 
