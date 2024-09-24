@@ -38,7 +38,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 ## Contents
 
 - [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#vif-rag-)
-- [FollowRAG](#followrag)
+- [FollowRAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#followrag-)
 - [Citation](#citation)
 
 
