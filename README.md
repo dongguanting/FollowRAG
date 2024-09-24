@@ -214,7 +214,7 @@ Please refer to the following template to prepare your result JSON files for sub
 ```
 
 
-### eval
+### Evaluation
 After completing the inference, run the evaluation script:
 ```bash
 export OPENAI_API_KEY=your_openai_api_key
