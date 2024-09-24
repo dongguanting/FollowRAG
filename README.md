@@ -43,7 +43,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-## VIF-RAG
+## 🌠 VIF-RAG
 
 
 We broke down the VIF-RAG data synthesis process into steps and provided 10-20 samples for each step to assist with your reproduction. Be sure to replace these with your own input.
@@ -114,7 +114,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ---
 
-## FollowRAG
+## 🐋 FollowRAG
 
 
 ### :wrench: Dependencies
@@ -128,6 +128,9 @@ pip install -r requirements.txt
 
 
 ### 📊 Test Cases
+
+<details>
+<summary>Click here, if you are curious about FollowRAG‘s test cases.</summary>
 
 **Key-Value Introduction:**
 
@@ -186,7 +189,7 @@ pip install -r requirements.txt
         ]
     }
 ```
-
+</details>
 
 
 
