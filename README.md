@@ -25,7 +25,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-## News
+## 💥 News
 
 - [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K). 
 
@@ -36,7 +36,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 ---
 
 ## Outlines
-- [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#vif-rag-)
+- [News](https://github.com/dongguanting/FollowRAG/blob/main/README.md#news)
 - [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#vif-rag-)
 - [FollowRAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#followrag-)
 - [Citation](https://github.com/dongguanting/FollowRAG/blob/main/README.md#citation-)
@@ -54,7 +54,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ---
 
-## VIF-RAG 🌠 
+## 🌠 VIF-RAG
 
 
 We broke down the VIF-RAG data synthesis process into steps and provided 10-20 samples for each step to assist with your reproduction. Be sure to replace these with your own input.
@@ -125,7 +125,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ---
 
-## FollowRAG 🐋 
+## 🐋 FollowRAG 
 
 FollowRAG is the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG. 
 
@@ -248,7 +248,7 @@ Our dataset are distributed under the [CC BY-NC 4.0](https://creativecommons.org
 
 
 
-## Citation 🎖
+## 🎖 Citation 
 
 Please cite our work if you find the repository helpful.
 
