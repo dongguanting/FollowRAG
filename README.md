@@ -116,6 +116,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ## 🐋 FollowRAG
 
+We introduce FollowRAG, the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG tasks. 
 
 
 
@@ -132,7 +133,7 @@ pip install -r requirements.txt
 ### 📊 Test Cases
 
 <details>
-<summary>Click here! if you are curious about FollowRAG‘s test cases.</summary>
+<summary>🔍 Click here! if you are curious about FollowRAG‘s test cases.</summary>
 
 **Key-Value Introduction:**
 
@@ -196,7 +197,7 @@ pip install -r requirements.txt
 
 
 
-### inference
+### 🔑 Inference
 You first need to perform inference on followRAG, and the pseudocode is as follows:
 ```python
 followRAG_full=load_json('followRAG/followRAG_full.json')
@@ -207,14 +208,15 @@ for dp in followRAG_full:
     data_inferenced.append(dp)
 save_jsonl(data_inferenced,'results/finish_inference/data_inferenced.jsonl')
 ```
-Please refer to the following template to prepare your result JSON files for subsequent evaluation. your data_inferenced.jsonl format is as follows:
+Please refer to the following template to prepare your result JSON files for subsequent evaluation. 
+Your data_inferenced.jsonl format should be consistent with the following form:
 
-```bash
+```json
 
 ```
 
 
-### Evaluation
+### 📝 Evaluation
 After completing the inference, run the evaluation script:
 ```bash
 export OPENAI_API_KEY=your_openai_api_key
@@ -231,7 +233,7 @@ Our evaluation of instruction-following part largely draws on the [IFEval code r
 
 
 
-## Citation 
+## 🎖 Citation 
 
 Please cite our work if you find the repository helpful.
 
