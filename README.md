@@ -36,20 +36,10 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 ---
 
 ## Outlines
-- [News](https://github.com/dongguanting/FollowRAG/blob/main/README.md#news)
-- [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#vif-rag-)
-- [FollowRAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#followrag-)
-- [Citation](https://github.com/dongguanting/FollowRAG/blob/main/README.md#citation-)
-
-
-## Outlines
-- [💥 News 💥](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-news-)
-- [👀 About We-Math](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-VIF-RAG)
-- [🏆 Leaderboard on We-Math 🏆](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-FollowRAG-)
-- [📝 Evaluation Piplines on We-Math](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-evaluation-piplines-on-we-math)
-- [📊 We-Math Dataset](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-we-math-dataset)
-- [📜 License](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-license)
-- [🤝 Contributors](https://github.com/dongguanting/FollowRAG/edit/main/README.md#-contributors)
+- [News](https://github.com/dongguanting/FollowRAG/blob/main/README.md#-news)
+- [VIF-RAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#-vif-rag-)
+- [FollowRAG](https://github.com/dongguanting/FollowRAG/blob/main/README.md#-followrag-)
+- [Citation](https://github.com/dongguanting/FollowRAG/blob/main/README.md#-citation-)
 
 
 ---
