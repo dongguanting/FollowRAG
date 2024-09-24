@@ -37,13 +37,13 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 ## Contents
 
-- [VIF-RAG](#VIF-RAG)
+- [VIF-RAG](##VIF-RAG)
 - [FollowRAG](#FollowRAG)
 - [Citation](#citation)
 
 ---
 
-## 🌠 VIF-RAG
+## VIF-RAG 🌠 
 
 
 We broke down the VIF-RAG data synthesis process into steps and provided 10-20 samples for each step to assist with your reproduction. Be sure to replace these with your own input.
@@ -114,7 +114,7 @@ deepspeed --num_gpus=8 train_bash.py \
 
 ---
 
-## 🐋 FollowRAG
+## FollowRAG 🐋 
 
 FollowRAG is the first benchmark designed to comprehensively evaluate LLM’s complex instruction-following abilities in RAG. 
 
@@ -234,7 +234,7 @@ Our evaluation of instruction-following part largely draws on the [IFEval code r
 
 
 
-## 🎖 Citation 
+## Citation 🎖
 
 Please cite our work if you find the repository helpful.
 
