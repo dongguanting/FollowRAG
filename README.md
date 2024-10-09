@@ -20,7 +20,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 
 <p align="center">
-🤖️ <a href="https://followrag.github.io/" target="_blank">Website</a> • 🤗 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank">VIF-RAG-QA-110K</a> • 👉 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K" target="_blank">VIF-RAG-QA-20K</a> • 📖 <a href="https://arxiv.org/pdf/2308.07074.pdf" target="_blank">Paper</a>  <br>
+🤖️ <a href="https://followrag.github.io/" target="_blank">Website</a> • 🤗 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank">VIF-RAG-QA-110K</a> • 👉 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K" target="_blank">VIF-RAG-QA-20K</a> • 📖 <a href="" target="_blank">Paper</a>  <br>
 </p>
 
 ---
