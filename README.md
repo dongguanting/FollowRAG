@@ -2,6 +2,7 @@
 
 
 <div align="center">
+<a><img alt="Static Badge" src="https://img.shields.io/badge/Task-Instruction--Following-red"></a>
 <a href="" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace%20Datasets-27b3b4.svg></a>
 <a href="https://github.com/dongguanting/IF-RAG/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green"></a>
