@@ -32,7 +32,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 
 - [10/2024] 🔥 We released our instruction-following auto-evaluation benchmark named ***FollowRAG***. Please follow [outlines](#FollowRAG) for evaluation.
 
-- [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](). 
+- [10/2024] 🔥 We introduced ***VIF-RAG***, the first automated, scalable, and verifiable data synthesis pipeline for aligning complex instruction-following in RAG scenarios. Check out the [paper](https://arxiv.org/abs/2410.09584). 
 
 ---
 
