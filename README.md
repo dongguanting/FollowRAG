@@ -282,7 +282,15 @@ Our dataset are distributed under the [CC BY-NC 4.0](https://creativecommons.org
 Please cite our work if you find the repository helpful.
 
 ```
-
+@misc{dong2024general,
+      title={Toward General Instruction-Following Alignment for Retrieval-Augmented Generation}, 
+      author={Guanting Dong and Xiaoshuai Song and Yutao Zhu and Runqi Qiao and Zhicheng Dou and Ji-Rong Wen},
+      year={2024},
+      eprint={2410.09584},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.09584}, 
+}
 ```
 
 
