@@ -1,0 +1,848 @@
+{
+    "cases_capital_words": {
+        "instruction_description": "In your response, words with all capital letters should appear at least / at most {N} times.",
+        "kwarg_description": [
+            {
+                "capital_relation": "Specifies whether the frequency constraint is 'at least' or 'at most'.",
+                "capital_frequency": "Specifies the number {N} indicating the minimum or maximum frequency of words with all capital letters."
+            }
+        ],
+        "cases": [
+            {
+                "input": {
+                    "capital_relation": "at least",
+                    "capital_frequency": 3
+                },
+                "output": "Use words in all capital letters at least 3 times to highlight key points."
+            },
+            {
+                "input": {
+                    "capital_relation": "less than",
+                    "capital_frequency": 10
+                },
+                "output": "Use words with all capital letters to highlight key contents, but make sure that words with all capital letters appear less than 10 times."
+            },
+            {
+                "input": {
+                    "capital_relation": "at least",
+                    "capital_frequency": 15
+                },
+                "output": "Include at least 15 words in all capital letters."
+            },
+            {
+                "input": {
+                    "capital_relation": "at least",
+                    "capital_frequency": 2
+                },
+                "output": "Use at least 2 words with all capital letters"
+            },
+            {
+                "input": {
+                    "capital_relation": "less than",
+                    "capital_frequency": 4
+                },
+                "output": "Please use words with all capital letters to make important claims. But words with capital letters should appear less than 4 times."
+            }
+        ]
+    },
+    "cases_uppercase": {
+        "instruction_description": "Your entire response should be in English, capital letters only. (**You only need to output an instruction** regarding \"capitalization\" instead of performing the capitalization operation.)",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "Your entire response should be in English and in all capital letters."
+            },
+            {
+                "input": {},
+                "output": "Make sure to only use capital letters in your entire response."
+            },
+            {
+                "input": {},
+                "output": "Please reply in English and capitalize all your words."
+            },
+            {
+                "input": {},
+                "output": "All letters in your entire response should be capitalized."
+            },
+            {
+                "input": {},
+                "output": "Your answer must be in all capital letters and in English."
+            }
+        ]
+    },
+    "cases_lowercase": {
+        "instruction_description": "Your entire response should be in English, and in all lowercase letters. No capital letters are allowed.",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "It should be all in lowercase letters."
+            },
+            {
+                "input": {},
+                "output": "All in lowercase letters."
+            },
+            {
+                "input": {},
+                "output": "Your entire response should be in lowercase english."
+            },
+            {
+                "input": {},
+                "output": "It should be in English and have no capital letters."
+            },
+            {
+                "input": {},
+                "output": "Your entire response must be in English and contain only lowercase letters."
+            }
+        ]
+    },
+    "format_repeat_question": {
+        "instruction_description": "First, repeat the request without change, then give your answer (do not say anything before repeating the request; the request you need to repeat does not include this sentence)",
+        "kwarg_description": {
+            "prompt_to_repeat": "The content that needs to be repeated as it is."
+        },
+        "cases": [
+            {
+                "input": {
+                    "prompt_to_repeat": "Write a resume for a junior hardware engineer. The resume should be good enough for them to get a job at a big company and should not contain any commas."
+                },
+                "output": "Before you answer the following request, repeat it at the very beginning of your reply. Repeat the request as it is. Please do not change it."
+            },
+            {
+                "input": {
+                    "prompt_to_repeat": "Write an email to my boss telling him that I am quitting. The email must contain a title wrapped in double angular brackets, i.e. <<title>>."
+                },
+                "output": "First repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)"
+            },
+            {
+                "input": {
+                    "prompt_to_repeat": "Write a blog post about the most interesting things you have seen or ridden on public transportation."
+                },
+                "output": "First repeat the sentence above word for word without change, then give your answer. Do not say any words or characters before repeating the sentence."
+            },
+            {
+                "input": {
+                    "prompt_to_repeat": "I am a software engineer with 7 years of experience, and I am looking for a new job. Can you create a resume for me and explain each section?"
+                },
+                "output": "First repeat the exact request above, then give your answer. Do not say any word before repeating the exact request."
+            },
+            {
+                "input": {
+                    "prompt_to_repeat": "Write an acoustic song about the Korean peninsula without using any commas."
+                },
+                "output": "In this task, repeat the exact request first, then give your response. Do not say any word before repeating the exact request."
+            }
+        ]
+    },
+    "structure_placeholder": {
+        "instruction_description": "The response must contain at least {N} placeholders represented by square brackets, such as [address].",
+        "kwarg_description": {
+            "num_placeholders": "The minimum number of placeholders that should be included in the response, represented by square brackets."
+        },
+        "cases": [
+            {
+                "input": {
+                    "num_placeholders": 1
+                },
+                "output": "includes at least one placeholder represented by square brackets"
+            },
+            {
+                "input": {
+                    "num_placeholders": 6
+                },
+                "output": "In your response, it must contain at least six placeholders which should be represented by square brackets."
+            },
+            {
+                "input": {
+                    "num_placeholders": 7
+                },
+                "output": "Include at least 7 placeholders with brackets like [xxx]."
+            },
+            {
+                "input": {
+                    "num_placeholders": 3
+                },
+                "output": "It must contain at least three placeholders, such as [something]."
+            },
+            {
+                "input": {
+                    "num_placeholders": 3
+                },
+                "output": "Your Response should contains at least 3 placeholders represented by square brackets."
+            }
+        ]
+    },
+    "position_postscript": {
+        "instruction_description": "At the end of your response, please explicitly add a postscript starting with {postscript marker}",
+        "kwarg_description": {
+            "postscript_marker": "The marker that should be used to start the postscript."
+        },
+        "cases": [
+            {
+                "input": {
+                    "postscript_marker": "P.S."
+                },
+                "output": "At the end of your response, please explicitly add a postscript starting with P.S."
+            },
+            {
+                "input": {
+                    "postscript_marker": "P.S."
+                },
+                "output": "At the end of your response, please explicitly add a postscript starting with P.S."
+            },
+            {
+                "input": {
+                    "postscript_marker": "P.P.S"
+                },
+                "output": "End it with a post script starting with P.P.S"
+            },
+            {
+                "input": {
+                    "postscript_marker": "Note."
+                },
+                "output": "please explicitly add a postscript starting with Note."
+            },
+            {
+                "input": {
+                    "postscript_marker": "P.S."
+                },
+                "output": "Please include a postscript at the end of your response that starts with P.S."
+            }
+        ]
+    },
+    "format_json": {
+        "instruction_description": "Entire output should be wrapped in JSON format.",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "Please wrap your entire answer in JSON format. You can use markdown ticks such as ```. For example:\n```JSON\n{\n...\n}\n```"
+            },
+            {
+                "input": {},
+                "output": "Entire output should be wrapped in JSON format."
+            },
+            {
+                "input": {},
+                "output": "Wrap the entire output in JSON format. You can use markdown ticks such as ```."
+            },
+            {
+                "input": {},
+                "output": "Please wrap your entire response in JSON format. Markdown ticks (```) are acceptable."
+            },
+            {
+                "input": {},
+                "output": "Wrap the entire output in JSON format using markdown ticks."
+            }
+        ]
+    },
+    "structure_sections": {
+        "instruction_description": "Your response must have {N} sections. Mark the beginning of each section with {section splitter} X.",
+        "kwarg_description": {
+            "section_spliter": "A string that denotes the beginning of each section",
+            "num_sections": "The number of sections required in the response"
+        },
+        "cases": [
+            {
+                "input": {
+                    "section_spliter": "SECTION",
+                    "num_sections": 4
+                },
+                "output": "The response should have four sections, with each section marked with SECTION X."
+            },
+            {
+                "input": {
+                    "section_spliter": "PARAGRAPH",
+                    "num_sections": 2
+                },
+                "output": "Write 2 paragraphs and label each paragraph with PARAGRAPH X."
+            },
+            {
+                "input": {
+                    "section_spliter": "SECTION",
+                    "num_sections": 4
+                },
+                "output": "Response with 4 sections marked with SECTION X."
+            },
+            {
+                "input": {
+                    "section_spliter": "Section",
+                    "num_sections": 4
+                },
+                "output": "The response should contain 4 sections anf each section should be explicitly noted as Section X."
+            },
+            {
+                "input": {
+                    "section_spliter": "SECTION",
+                    "num_sections": 3
+                },
+                "output": "Response in 3 sections. Mark the beginning of each section with SECTION X."
+            }
+        ]
+    },
+    "structure_bullets": {
+        "instruction_description": "Your answer must contain exactly {N} bullet points. Use the markdown bullet points such as: * This is a point.",
+        "kwarg_description": {
+            "num_bullets": "The number of bullet points required in the answer."
+        },
+        "cases": [
+            {
+                "input": {
+                    "num_bullets": 6
+                },
+                "output": "Your answer must contain exactly 6 bullet point in Markdown using the following format:\n* Bullet point one.\n* Bullet point two.\n...\n* Bullet point fix."
+            },
+            {
+                "input": {
+                    "num_bullets": 3
+                },
+                "output": "Your answer must contain exactly 3 bullet points in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first point.\n* This is the second point."
+            },
+            {
+                "input": {
+                    "num_bullets": 10
+                },
+                "output": "Your answer must contain exactly 10 bullet points. Use the markdown bullet points such as: * This is a point."
+            },
+            {
+                "input": {
+                    "num_bullets": 8
+                },
+                "output": "Include exactly 8 bullet points in your response. The bullet points should be in the form of:\n* This is bullet 1\n* This is bullet 2\n..."
+            },
+            {
+                "input": {
+                    "num_bullets": 2
+                },
+                "output": "In your entire response make sure to use exactly two bullet points in markdown format. Please use the following bullet point format:\n* Text for bullet 1\n* Text for bullet 2."
+            }
+        ]
+    },
+    "structure_highlights": {
+        "instruction_description": "Highlight at least {N} sections in your answer with markdown, i.e. *highlighted section*",
+        "kwarg_description": {
+            "num_highlights": "The minimum number of sections you need to highlight in your response."
+        },
+        "cases": [
+            {
+                "input": {
+                    "num_highlights": 3
+                },
+                "output": "Highlight at least three sections of your response in markdown such as *highlighted section*."
+            },
+            {
+                "input": {
+                    "num_highlights": 3
+                },
+                "output": "Highlight at least 3 sections that has titles in markdown format, for example *highlighted section part 1*, *highlighted section part 2*, *highlighted section part 3*."
+            },
+            {
+                "input": {
+                    "num_highlights": 2
+                },
+                "output": "Highlight at least 2 text sections, i.e. *highlighted section*."
+            },
+            {
+                "input": {
+                    "num_highlights": 3
+                },
+                "output": "Please highlight at least 3 sections with markdown,  i.e *highlighted section*."
+            },
+            {
+                "input": {
+                    "num_highlights": 1
+                },
+                "output": "Highlight some words or phrases in your response, like *highlighted phrase*."
+            }
+        ]
+    },
+    "structure_title": {
+        "instruction_description": "Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "Your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>."
+            },
+            {
+                "input": {},
+                "output": "Your answer must contain a title, wrapped in double angular brackets, such as <<Title>>."
+            },
+            {
+                "input": {},
+                "output": "Your answer should have a title in double angular brackets, i.e. <<title>>."
+            },
+            {
+                "input": {},
+                "output": "The response must have a title wrapped in double angular brackets, i.e. <<title>>."
+            },
+            {
+                "input": {},
+                "output": "Yprovide a title wrapped in double angular brackets, such as <<my title>>."
+            }
+        ]
+    },
+    "keywords_inclusion": {
+        "instruction_description": "Include keywords {keyword1}, {keyword2},…… in your response",
+        "kwarg_description": {
+            "keywords": "a list of keywords that should be included in the response"
+        },
+        "cases": [
+            {
+                "input": {
+                    "keywords": [
+                        "talented",
+                        "tianjin"
+                    ]
+                },
+                "output": "Include the keywords talented and tianjin in your response."
+            },
+            {
+                "input": {
+                    "keywords": [
+                        "remainder"
+                    ]
+                },
+                "output": " Include the keyword 'remainder'."
+            },
+            {
+                "input": {
+                    "keywords": [
+                        "bill",
+                        "economist",
+                        "jurgen"
+                    ]
+                },
+                "output": "The answer should include keywords 'economist', 'bill', and 'jurgen'"
+            },
+            {
+                "input": {
+                    "keywords": [
+                        "compensated",
+                        "immigrants"
+                    ]
+                },
+                "output": "Please also make sure to include keywords 'compensated' and 'immigrants' in the response."
+            },
+            {
+                "input": {
+                    "keywords": [
+                        "Argentinian"
+                    ]
+                },
+                "output": "Mention \"Argentinian\" in the answer."
+            }
+        ]
+    },
+    "keywords_exclusion": {
+        "instruction_description": "Do not include keywords {forbidden words} in the response.",
+        "kwarg_description": {
+            "forbidden_words": "a list of words that should not be used in the response"
+        },
+        "cases": [
+            {
+                "input": {
+                    "forbidden_words": [
+                        "reschedule",
+                        "free"
+                    ]
+                },
+                "output": "Do not use the words reschedule or free."
+            },
+            {
+                "input": {
+                    "forbidden_words": [
+                        "nickname"
+                    ]
+                },
+                "output": "Do not say the word \"nickname\" in the response."
+            },
+            {
+                "input": {
+                    "forbidden_words": [
+                        "sleep",
+                        "cook",
+                        "feed"
+                    ]
+                },
+                "output": "Avoid using the following keywords: sleep, cook, feed."
+            },
+            {
+                "input": {
+                    "forbidden_words": [
+                        "coop",
+                        "killings",
+                        "dead",
+                        "night"
+                    ]
+                },
+                "output": "The answer should not include keywords \"coop\", \"killings\", \"dead\", \"night\"."
+            },
+            {
+                "input": {
+                    "forbidden_words": [
+                        "taylor",
+                        "swift",
+                        "together"
+                    ]
+                },
+                "output": "Do not mention the word Taylor, Swift, or Together."
+            }
+        ]
+    },
+    "keywords_frequency": {
+        "instruction_description": "In your response, the word word should appear {N} times.",
+        "kwarg_description": {
+            "relation": "Specifies whether the frequency constraint is 'at least' or 'at most'. The 'relation' parameter must be either 'less than' or 'at least'.",
+            "keyword": "the word that should appear in the response",
+            "frequency": "Specifies the number {N} indicating the minimum or maximum frequency of the keyword."
+        },
+        "cases": [
+            {
+                "input": {
+                    "relation": "less than",
+                    "keyword": "batted",
+                    "frequency": 2
+                },
+                "output": "The word batted should appear less than 2 times."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "keyword": "synonyms",
+                    "frequency": 3
+                },
+                "output": "Make sure the word synonyms appears at least 3 times in the response."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "keyword": "disappointed",
+                    "frequency": 2
+                },
+                "output": "The word disappointed should appear at least 2 times."
+            },
+            {
+                "input": {
+                    "relation": "less than",
+                    "keyword": "flesh",
+                    "frequency": 3
+                },
+                "output": "The word flesh should appear less than 3 times in your response."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "keyword": "dose",
+                    "frequency": 5
+                },
+                "output": "Mention the word \"dose\" for at least 5 times."
+            }
+        ]
+    },
+    "format_language": {
+        "instruction_description": "Your ENTIRE response should be in {language}, no other language is allowed.",
+        "kwarg_description": {
+            "language": "The language in which the entire response should be written. The mapping relationship between parameters and language is {'kn': 'Kannada', 'pa': 'Punjabi', 'mr': 'Marathi', 'fa': 'Persian', 'vi': 'Vietnamese', 'ko': 'Korean', 'sw': 'Swahili', 'ru': 'Russian', 'hi': 'Hindi', 'bg': 'Bulgarian', 'pt': 'Portuguese', 'gu': 'Gujarati', 'te': 'Telugu', 'it': 'Italian', 'ar': 'Arabic', 'ta': 'Tamil', 'de': 'German', 'fi': 'Finnish', 'ur': 'Urdu', 'th': 'Thai', 'ne': 'Nepali', 'bn': 'Bengali'}"
+        },
+        "cases": [
+            {
+                "input": {
+                    "language": "hi"
+                },
+                "output": "using only Hindi, no other language is allowed"
+            },
+            {
+                "input": {
+                    "language": "ne"
+                },
+                "output": "Using only the Nepali language throughout your entire response."
+            },
+            {
+                "input": {
+                    "language": "bn"
+                },
+                "output": "The response must be entirely in the Bengali language, no other language is allowed."
+            },
+            {
+                "input": {
+                    "language": "de"
+                },
+                "output": "Please make your response in only German, no other language is allowed."
+            },
+            {
+                "input": {
+                    "language": "ko"
+                },
+                "output": "Use only Korean in your response."
+            }
+        ]
+    },
+    "position_first_word": {
+        "instruction_description": "There should be {N} paragraphs. Paragraphs and only paragraphs are separated with each other by two line breaks. The {i}-th paragraph must start with word {first word}.",
+        "kwarg_description": {
+            "first_word": "The first word of the specified paragraph which must appear at the beginning of that paragraph.",
+            "num_paragraphs": "The total number of paragraphs that the text should contain.",
+            "nth_paragraph": "The index (1-based) of the paragraph that should start with the given first word."
+        },
+        "cases": [
+            {
+                "input": {
+                    "first_word": "president",
+                    "num_paragraphs": 6,
+                    "nth_paragraph": 2
+                },
+                "output": "The answer should contain exactly six paragraphs, and the second paragraph must start with the word \"President\". Separate paragraphs by double line breaks (\"\\n\\n\")"
+            },
+            {
+                "input": {
+                    "first_word": "summary",
+                    "num_paragraphs": 7,
+                    "nth_paragraph": 7
+                },
+                "output": "Your answer should have exactly 7 paragraphs and the last paragraph must start with the word \"Summary\". Each paragraph should be separated by two new lines."
+            },
+            {
+                "input": {
+                    "first_word": "realising",
+                    "num_paragraphs": 2,
+                    "nth_paragraph": 1
+                },
+                "output": "Can you please provide a two paragraph answer about me? Make sure that the first paragraph starts with the word \"realising\" and that each paragraph is separated by two new lines."
+            },
+            {
+                "input": {
+                    "first_word": "elm",
+                    "num_paragraphs": 4,
+                    "nth_paragraph": 4
+                },
+                "output": "Write exactly 4 paragraphs about the question. Use 2 new lines to separate paragraphs. Start the 4th paragraph with the word \"elm\"."
+            },
+            {
+                "input": {
+                    "first_word": "bonding",
+                    "num_paragraphs": 3,
+                    "nth_paragraph": 3
+                },
+                "output": "Your answer must be exactly 3 paragraphs where paragraphs and only paragraphs are separated by two new lines, as if they were '\\n\\n' in python. The third paragraph must start with the word bonding."
+            }
+        ]
+    },
+    "length_paragraph": {
+        "instruction_description": "Your response should contain {N} paragraphs. You separate paragraphs using the markdown divider: * * *",
+        "kwarg_description": {
+            "num_paragraphs": "The total number of paragraphs that the response should contain."
+        },
+        "cases": [
+            {
+                "input": {
+                    "num_paragraphs": 3
+                },
+                "output": "Make sure to break the conversation down to 3 parts, separated by ***, such as:\n[conversation part 1]\n***\n[conversation part 2]\n***\n[conversation part 3]"
+            },
+            {
+                "input": {
+                    "num_paragraphs": 3
+                },
+                "output": "Please reply in details, and include exactly 3 paragraphs. Separate the paragraphs with ***."
+            },
+            {
+                "input": {
+                    "num_paragraphs": 4
+                },
+                "output": "There should be exactly 4 paragraphs. Separate the paragraphs with ***."
+            },
+            {
+                "input": {
+                    "num_paragraphs": 3
+                },
+                "output": "Separate your answer into 3 parts, where each part is separated with ***."
+            },
+            {
+                "input": {
+                    "num_paragraphs": 5
+                },
+                "output": "Put the response into at least 5 sections, separated using 3 asterisks ***."
+            }
+        ]
+    },
+    "length_sentence": {
+        "instruction_description": "Answer with at least / around / at most {N} sentences.",
+        "kwarg_description": {
+            "relation": "Specifies whether the frequency constraint is 'at least' or 'at most'. The 'relation' parameter must be either 'less than' or 'at least'.",
+            "num_sentences": "Specifies the number {N} indicating the minimum or maximum number of sentences."
+        },
+        "cases": [
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_sentences": 10
+                },
+                "output": "Please provide less than a total of 10 sentences in your entire answer."
+            },
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_sentences": 7
+                },
+                "output": "Your answer should be less than 7 sentences."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "num_sentences": 40
+                },
+                "output": "The number of sentences in your response should be in the range of 40 to 60."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "num_sentences": 30
+                },
+                "output": "I'd like your response to be at least 30 sentences long."
+            },
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_sentences": 8
+                },
+                "output": "Your response should contain less than 8 sentences."
+            }
+        ]
+    },
+    "length_words": {
+        "instruction_description": "Answer with at least / around / at most {N} words.",
+        "kwarg_description": {
+            "relation": "Specifies whether the frequency constraint is 'at least' or 'at most'. The 'relation' parameter must be either 'less than' or 'at least'.",
+            "num_words": "Specifies the number {N} indicating the minimum or maximum number of words."
+        },
+        "cases": [
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_words": 30
+                },
+                "output": "Make your entire response less than 30 words."
+            },
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_words": 200
+                },
+                "output": "Answer with less than 200 words."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "num_words": 1200
+                },
+                "output": "Your entire response must contain at least 1200 words."
+            },
+            {
+                "input": {
+                    "relation": "less than",
+                    "num_words": 40
+                },
+                "output": "Make your reply short -- the whole reply should contain less than 40 words."
+            },
+            {
+                "input": {
+                    "relation": "at least",
+                    "num_words": 600
+                },
+                "output": "Write a 600+ word reseponse."
+            }
+        ]
+    },
+    "format_no_commas": {
+        "instruction_description": "In your entire response, refrain from the use of any commas.",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "Do not contain commas in your response."
+            },
+            {
+                "input": {},
+                "output": "Do not use any commas in your response."
+            },
+            {
+                "input": {},
+                "output": "In your entire response, refrain from the use of any commas."
+            },
+            {
+                "input": {},
+                "output": "You cannot use any commas in your entire response."
+            },
+            {
+                "input": {},
+                "output": "You are not allowed to use any commas in your answer."
+            }
+        ]
+    },
+    "position_end_with": {
+        "instruction_description": "Finish your response with this exact phrase {end phrase}. No other words should follow this phrase.",
+        "kwarg_description": {
+            "end_phrase": "The specific phrase that should appear at the end of the response."
+        },
+        "cases": [
+            {
+                "input": {
+                    "end_phrase": "Is there anything else I can help with?"
+                },
+                "output": "Finish your response with \"Is there anything else I can help with?\". No other words should follow this phrase."
+            },
+            {
+                "input": {
+                    "end_phrase": "Hope you agree with me."
+                },
+                "output": "Finish your entire response with this exact phrase: Hope you agree with me."
+            },
+            {
+                "input": {
+                    "end_phrase": "Peace!"
+                },
+                "output": "Finish the answer with:\n\nPeace!\n\nNo additional words should follow \"Peace!\""
+            },
+            {
+                "input": {
+                    "end_phrase": "Follow the 5 steps listed above, and you will be successful."
+                },
+                "output": "Finish your response with \"Follow the 5 steps listed above, and you will be successful.\" No other words should follow this."
+            },
+            {
+                "input": {
+                    "end_phrase": "Which one you choose?"
+                },
+                "output": "I need you to end your response with \"Which one you choose?\"."
+            }
+        ]
+    },
+    "format_quotation": {
+        "instruction_description": "Wrap your entire response with double quotation marks.",
+        "kwarg_description": {},
+        "cases": [
+            {
+                "input": {},
+                "output": "Wrap your entire response in double quotation marks."
+            },
+            {
+                "input": {},
+                "output": "Put your whole response in double quotes."
+            },
+            {
+                "input": {},
+                "output": "Wrap your entire answer with double quotation marks."
+            },
+            {
+                "input": {},
+                "output": "Use double quotation marks to enclose your entire response."
+            },
+            {
+                "input": {},
+                "output": "Enclose your whole reply in double quote marks."
+            }
+        ]
+    }
+}
