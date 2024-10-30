@@ -1,9 +1,9 @@
-# <div align="center">🔥Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
+<img width="1093" alt="image" src="https://github.com/user-attachments/assets/8c66ec57-0e9e-4371-865e-463653604817"># <div align="center">🔥Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
 
 
 <div align="center">
 <a><img alt="Static Badge" src="https://img.shields.io/badge/Task-Instruction--Following-red"></a>
-<a href="" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
+<a href="https://arxiv.org/pdf/2410.09584" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
 <a href="https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace%20Datasets-27b3b4.svg></a>
 <a href="https://github.com/dongguanting/IF-RAG/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green"></a>
 <a><img alt="Static Badge" src="https://img.shields.io/badge/made_with-Python-blue"></a>
