@@ -1,4 +1,4 @@
-<img width="1093" alt="image" src="https://github.com/user-attachments/assets/8c66ec57-0e9e-4371-865e-463653604817"># <div align="center">🔥Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
+ <div align="center">🔥Toward General Instruction-Following Alignment for Retrieval-Augmented Generation<div>
 
 
 <div align="center">
