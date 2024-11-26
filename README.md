@@ -282,14 +282,25 @@ Our dataset are distributed under the [CC BY-NC 4.0](https://creativecommons.org
 Please cite our work if you find the repository helpful.
 
 ```
-@misc{dong2024general,
-      title={Toward General Instruction-Following Alignment for Retrieval-Augmented Generation}, 
-      author={Guanting Dong and Xiaoshuai Song and Yutao Zhu and Runqi Qiao and Zhicheng Dou and Ji-Rong Wen},
-      year={2024},
-      eprint={2410.09584},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.09584}, 
+@article{dong2024general,
+  author       = {Guanting Dong and
+                  Xiaoshuai Song and
+                  Yutao Zhu and
+                  Runqi Qiao and
+                  Zhicheng Dou and
+                  Ji{-}Rong Wen},
+  title        = {Toward General Instruction-Following Alignment for Retrieval-Augmented
+                  Generation},
+  journal      = {CoRR},
+  volume       = {abs/2410.09584},
+  year         = {2024},
+  url          = {https://doi.org/10.48550/arXiv.2410.09584},
+  doi          = {10.48550/ARXIV.2410.09584},
+  eprinttype    = {arXiv},
+  eprint       = {2410.09584},
+  timestamp    = {Fri, 22 Nov 2024 21:38:25 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-09584.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
