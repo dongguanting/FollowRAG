@@ -27,7 +27,7 @@ We propose a instruction-following alignement pipline named **VIF-RAG framework*
 ---
 
 ## 💥 News
-- [10/2024] 🔥 Our paper has been accepted by **AAAI 2025**. 
+- [12/2024] 🔥 Our paper has been accepted by **AAAI 2025**. 
 
 - [10/2024] 🔥 We released an our SFT datasets named VIF-RAG-QA for deployments. Download [VIF-RAG-QA-110K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-110K) and [VIF-RAG-QA-20K](https://huggingface.co/datasets/dongguanting/VIF-RAG-QA-20K) here. 
 
