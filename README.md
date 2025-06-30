@@ -283,24 +283,27 @@ Our dataset are distributed under the [CC BY-NC 4.0](https://creativecommons.org
 Please cite our work if you find the repository helpful.
 
 ```
-@article{dong2024general,
+@inproceedings{dong2024verifiable,
   author       = {Guanting Dong and
                   Xiaoshuai Song and
                   Yutao Zhu and
                   Runqi Qiao and
                   Zhicheng Dou and
                   Ji{-}Rong Wen},
-  title        = {Toward General Instruction-Following Alignment for Retrieval-Augmented
+  editor       = {Toby Walsh and
+                  Julie Shah and
+                  Zico Kolter},
+  title        = {Toward Verifiable Instruction-Following Alignment for Retrieval Augmented
                   Generation},
-  journal      = {CoRR},
-  volume       = {abs/2410.09584},
-  year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2410.09584},
-  doi          = {10.48550/ARXIV.2410.09584},
-  eprinttype    = {arXiv},
-  eprint       = {2410.09584},
-  timestamp    = {Fri, 22 Nov 2024 21:38:25 +0100},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-09584.bib},
+  booktitle    = {AAAI-25, Sponsored by the Association for the Advancement of Artificial
+                  Intelligence, February 25 - March 4, 2025, Philadelphia, PA, {USA}},
+  pages        = {23796--23804},
+  publisher    = {{AAAI} Press},
+  year         = {2025},
+  url          = {https://doi.org/10.1609/aaai.v39i22.34551},
+  doi          = {10.1609/AAAI.V39I22.34551},
+  timestamp    = {Thu, 17 Apr 2025 17:08:58 +0200},
+  biburl       = {https://dblp.org/rec/conf/aaai/DongS0QDW25.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
